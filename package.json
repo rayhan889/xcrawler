@@ -1,6 +1,6 @@
 {
   "name": "@rayhanhendra/xcrawler",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Stealth web crawler engine for X/Twitter (Research only)",
   "type": "module",
   "main": "dist/index.js",
