@@ -1,0 +1,52 @@
+{
+  "name": "@rayhan889/xcrawler",
+  "version": "0.1.0",
+  "description": "Stealth web crawler engine for X/Twitter (Research only)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "xcrawler": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch src/index.ts src/cli.ts",
+    "start": "node dist/cli.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [],
+  "author": "Rayhan Atmadja",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.3",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@playwright/browser-chromium": "^1.59.1",
+    "better-sqlite3": "^12.9.0",
+    "commander": "^14.0.3",
+    "csv-writer": "^1.6.0",
+    "playwright": "^1.59.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "zod": "^4.4.1"
+  }
+}
