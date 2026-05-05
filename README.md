@@ -3,8 +3,8 @@
   <p><strong>A Stealth X/Twitter Web Crawler Engine for Research</strong></p>
 
   <p>
-    <a href="https://github.com/rayhan889/xcrawler/actions/workflows/ci.yml"><img src="https://github.com/rayhan889/xcrawler/actions/workflows/ci.yml/badge.svg" alt="CI Status"></a>
-    <a href="https://www.npmjs.com/package/@rayhan889/xcrawler"><img src="https://img.shields.io/npm/v/@rayhan889/xcrawler.svg" alt="NPM Version"></a>
+    <a href="https://github.com/rayhanhendra/xcrawler/actions/workflows/ci.yml"><img src="https://github.com/rayhanhendra/xcrawler/actions/workflows/ci.yml/badge.svg" alt="CI Status"></a>
+    <a href="https://www.npmjs.com/package/@rayhanhendra/xcrawler"><img src="https://img.shields.io/npm/v/@rayhanhendra/xcrawler.svg" alt="NPM Version"></a>
     <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg" alt="Node Version">
     <img src="https://img.shields.io/badge/license-ISC-blue.svg" alt="License">
   </p>
@@ -29,13 +29,13 @@ It features automatic tweet deduplication using SQLite and exports clean data di
 You can install `xcrawler` globally via npm (or pnpm/yarn):
 
 ```bash
-npm install -g @rayhan889/xcrawler
+npm install -g @rayhanhendra/xcrawler
 ```
 
 Or run it directly using `npx`:
 
 ```bash
-npx @rayhan889/xcrawler [command] [options]
+npx @rayhanhendra/xcrawler [command] [options]
 ```
 
 ## 🛠️ Usage
@@ -103,7 +103,7 @@ Scraping X/Twitter may violate their Terms of Service. The developers of this to
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/rayhan889/xcrawler/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/rayhanhendra/xcrawler/issues).
 
 ## 📄 License
 
