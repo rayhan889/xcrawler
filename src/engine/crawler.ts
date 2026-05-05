@@ -7,17 +7,16 @@ import { DedupStore } from '../store/dedup.js';
 import { RateLimiter } from '../limiter/rate-limiter.js';
 import { CsvOutput } from '../output/writer.js';
 import { logger } from '../utils/logger.js';
-import { retry } from '../utils/retry.js';
 
 export class XCrawler {
-  private config: CrawlerConfig;
+  private readonly config: CrawlerConfig;
   private browser: Browser | null = null;
   private context: BrowserContext | null = null;
   private page: Page | null = null;
-  private interceptor: TweetInterceptor;
-  private dedupStore: DedupStore;
-  private rateLimiter: RateLimiter;
-  private csvOutput: CsvOutput;
+  private readonly interceptor: TweetInterceptor;
+  private readonly dedupStore: DedupStore;
+  private readonly rateLimiter: RateLimiter;
+  private readonly csvOutput: CsvOutput;
   private shouldStop: boolean = false;
   private totalCollected: number = 0;
   private totalDuplicates: number = 0;
