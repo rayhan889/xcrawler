@@ -75,17 +75,17 @@ xcrawler search --keywords "artificial intelligence OR AI" --auth-token "your_to
 
 **1. Basic Search with custom output:**
 ```bash
-xcrawler search -k "Next.js 14" --auth-token "abc123xyz..." -o "./nextjs-tweets.csv"
+npx xcrawler search -k "Next.js 14" --auth-token "abc123xyz..." -o "./nextjs-tweets.csv"
 ```
 
 **2. Large Scale Extraction with custom batching:**
 ```bash
-xcrawler search -k "from:elonmusk" --auth-token "abc123xyz..." -m 1000 --batch-size 200 --batch-delay 120
+npx xcrawler search -k "from:elonmusk" --auth-token "abc123xyz..." -m 1000 --batch-size 200 --batch-delay 120
 ```
 
 **3. Debugging Mode (Visible Browser):**
 ```bash
-xcrawler search -k "typescript" --auth-token "abc123xyz..." --no-headless
+npx xcrawler search -k "typescript" --auth-token "abc123xyz..." --no-headless
 ```
 
 ## 🗄️ Database & Deduplication
@@ -103,7 +103,7 @@ Scraping X/Twitter may violate their Terms of Service. The developers of this to
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/rayhanhendra/xcrawler/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/rayhan889/xcrawler/issues).
 
 ## 📄 License
 

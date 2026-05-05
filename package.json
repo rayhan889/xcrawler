@@ -19,7 +19,7 @@
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.0.0"
   },
   "keywords": [],
   "author": "Rayhan Atmadja",
@@ -50,5 +50,10 @@
     "playwright-extra": "^4.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
     "zod": "^4.4.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
   }
 }
