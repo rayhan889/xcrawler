@@ -22,7 +22,7 @@ export async function setupBrowser(config: CrawlerConfig) {
   const context = await browser.newContext({
     viewport: { width: 1280, height: 720 },
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    locale: config.lang === 'en' ? 'en-US' : `${config.lang}-${config.lang.toUpperCase()}`,
+    locale: !config.lang || config.lang === 'en' ? 'en-US' : `${config.lang}-${config.lang.toUpperCase()}`,
     timezoneId: 'America/New_York',
   });
 

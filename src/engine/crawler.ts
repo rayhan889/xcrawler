@@ -107,7 +107,9 @@ export class XCrawler {
   }
 
   private buildSearchUrl(): string {
-    const query = `${this.config.keywords} lang:${this.config.lang}`;
+    const query = this.config.lang
+      ? `${this.config.keywords} lang:${this.config.lang}`
+      : this.config.keywords;
     const encoded = encodeURIComponent(query);
     return `https://x.com/search?q=${encoded}&src=typed_query&f=live`;
   }

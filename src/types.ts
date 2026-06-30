@@ -12,7 +12,7 @@ export interface Tweet {
 
 export interface CrawlerConfig {
   keywords: string;
-  lang: string;
+  lang?: string;
   output: string;
   max: number;
   authToken: string;

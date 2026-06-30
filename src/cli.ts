@@ -26,7 +26,7 @@ program
     '--auth-token <token>',
     'Your X/Twitter auth_token cookie value (required)'
   )
-  .option('-l, --lang <code>', 'Language filter (ISO 639-1 code)', 'en')
+  .option('-l, --lang <code>', 'Language filter (ISO 639-1 code, omit for all languages)')
   .option('-o, --output <path>', 'Output CSV file path', './output.csv')
   .option('-m, --max <number>', 'Maximum number of tweets to collect', '100')
   .option('--batch-size <number>', 'Number of tweets per batch before cooldown', '100')
@@ -56,7 +56,7 @@ program
       console.log('\n🔍 XCrawler v0.1.0');
       console.log('━'.repeat(40));
       console.log(`  Keywords   : ${config.keywords}`);
-      console.log(`  Language   : ${config.lang}`);
+      console.log(`  Language   : ${config.lang ?? 'any'}`);
       console.log(`  Max tweets : ${config.max}`);
       console.log(`  Output     : ${config.output}`);
       console.log(`  Headless   : ${config.headless}`);
