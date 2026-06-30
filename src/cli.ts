@@ -11,7 +11,7 @@ program
   .name('xcrawler')
   .description(
     'Stealth X/Twitter web crawler for research purposes.\n' +
-    'Scrapes tweets matching keywords with human-like behavior.'
+      'Scrapes tweets matching keywords with human-like behavior.'
   )
   .version('0.1.0');
 
@@ -26,13 +26,28 @@ program
     '--auth-token <token>',
     'Your X/Twitter auth_token cookie value (required)'
   )
-  .option('-l, --lang <code>', 'Language filter (ISO 639-1 code, omit for all languages)')
+  .option(
+    '-l, --lang <code>',
+    'Language filter (ISO 639-1 code, omit for all languages)'
+  )
   .option('-o, --output <path>', 'Output CSV file path', './output.csv')
   .option('-m, --max <number>', 'Maximum number of tweets to collect', '100')
-  .option('--batch-size <number>', 'Number of tweets per batch before cooldown', '100')
-  .option('--batch-delay <seconds>', 'Cooldown delay between batches in seconds', '60')
+  .option(
+    '--batch-size <number>',
+    'Number of tweets per batch before cooldown',
+    '100'
+  )
+  .option(
+    '--batch-delay <seconds>',
+    'Cooldown delay between batches in seconds',
+    '60'
+  )
   .option('--no-headless', 'Run browser in visible mode (useful for debugging)')
-  .option('--db <path>', 'Path to the deduplication database file', './xcrawler.db')
+  .option(
+    '--db <path>',
+    'Path to the deduplication database file',
+    './xcrawler.db'
+  )
   .action(async (options) => {
     try {
       // Map CLI options to our config shape.
